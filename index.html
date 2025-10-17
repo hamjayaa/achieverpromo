@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Achievers Mumtas</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="app-root" class="min-h-screen w-full text-[#1b2b22]">
+        
+        <section id="hero-section" class="relative h-[86vh] flex flex-col justify-center items-center text-center bg-[#f6f7f5] px-6 overflow-hidden">
+            <h1 id="hero-h1" class="text-[14vw] md:text-8xl leading-[0.9] font-extrabold uppercase text-[#2f4f3a] tracking-[0.1em]" 
+                style="opacity:0; transform: translateY(50px) scale(0.9);">
+                Selamat
+            </h1>
+            <div class="mt-2">
+                <span id="hero-span"
+                    class="block text-[12vw] md:text-7xl font-extrabold uppercase tracking-tight bg-clip-text text-transparent animate-gradient"
+                    style="background-image: linear-gradient(270deg, #2f4f3a, #588157, #a3b18a, #3a5a40, #588157); opacity:0; transform: translateY(30px);"
+                >
+                    Para Achievers
+                </span>
+            </div>
+            <p id="hero-p" class="mt-4 text-lg md:text-3xl font-semibold text-[#3a5a40]"
+                style="opacity:0; transform: translateY(20px);">
+                Qualified Mumtas yang berhasil <span class="text-[#588157] font-bold">mencapai</span> promo
+            </p>
+        </section>
+
+        <div id="info-bar" class="px-6 sm:px-10 mt-4">
+            </div>
+
+        <section id="filter-panel-section" class="px-6 sm:px-10 mt-4 relative z-10">
+            <div id="filter-panel" class="rounded-3xl border border-[#dce6d8] bg-white p-6 sm:p-10">
+                <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                    <div class="flex-1">
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-[#2f4f3a]">
+                            Pengumuman Achievers
+                        </h2>
+                        <p class="mt-2 text-sm sm:text-base text-[#2f4f3a]">
+                            Daftar qualified yang berhak mendapatkan hadiah dari program promo aktif.
+                        </p>
+                    </div>
+                    <div class="grid w-full max-w-sm grid-cols-2 gap-3">
+                        <div class="rounded-2xl border border-[#a3b18a]/50 bg-[#eaf2e6] p-4">
+                            <div class="text-xs text-[#3a5a40]">Promo Aktif</div>
+                            <div class="text-sm font-semibold">Team Up, Cash Up!</div>
+                        </div>
+                        <div class="rounded-2xl border border-[#dce6d8] bg-white p-4">
+                            <div class="text-xs text-[#4c6b57]">Total Qualified</div>
+                            <div id="total-qualified" class="text-lg font-extrabold">...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="controls-container">
+                    </div>
+                
+                <div id="promo-tabs" class="mt-4 flex flex-wrap gap-2">
+                    </div>
+
+            </div>
+        </section>
+
+        <section class="px-6 sm:px-10 py-8">
+            <div id="member-grid" class="grid gap-4 sm:gap-5 md:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                </div>
+            <div id="no-results" class="text-center text-[#4c6b57] py-16 hidden">
+                Tidak ada data yang cocok.
+            </div>
+        </section>
+
+        <footer class="px-6 sm:px-10 pb-12">
+            <div class="text-center text-sm sm:text-base text-[#2f4f3a] font-medium">
+                Terima kasih atas pencapaian dan dedikasi Anda bersama Mumtas. Terus melaju, capai target berikutnya! ✨
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -386,7 +386,6 @@ function renderUI() {
 window.handleSearch = function(value) {
     state.searchQ = value;
     renderMemberGrid();
-    renderControls(); 
 }
 
 window.handleMonthChange = function(value) {

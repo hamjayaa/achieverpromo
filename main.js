@@ -311,9 +311,6 @@ function renderInfoBar() {
             ${syncedAt ? ` • Sinkron: ${syncedAt}` : ""}
             ${error ? `<span class="ml-2 text-[#a63a3a] font-semibold">(Error: ${error})</span>` : ''}
         </div>
-        <div class="text-xs text-[#4c6b57] mt-1">
-            *Pastikan header kolom di Google Sheet Anda sesuai (misalnya: 'name', 'city', 'reward', 'qualifiedAt').
-        </div>
     `;
 }
 
